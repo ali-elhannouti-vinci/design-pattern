@@ -2,9 +2,10 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 public class AnalyseurDeTexte {
-	public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
 		BufferedReader lecteurAvecBuffer = null;
 		String ligne;
 		int nbrMots = 0, nbrLignes = 0, nbrPalindromes = 0, nbrBelgique = 0;
