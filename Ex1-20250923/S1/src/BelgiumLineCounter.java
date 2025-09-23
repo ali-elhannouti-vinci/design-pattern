@@ -1,7 +1,7 @@
 public class BelgiumLineCounter extends LineProcessor {
     private int nbrBelgium;
 
-    public BelgiumLineCounter(int currentLine) {
+    public BelgiumLineCounter(String currentLine) {
         super(currentLine);
     }
 

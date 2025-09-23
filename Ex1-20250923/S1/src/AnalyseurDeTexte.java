@@ -15,6 +15,9 @@ public class AnalyseurDeTexte {
 			System.out.println("Erreur d'ouverture");
 		}
 		while ((ligne = lecteurAvecBuffer.readLine()) != null) {
+            Texte texte = new Texte();
+            LineProcessor belgianCounter = new BelgiumLineCounter(ligne);
+            texte.registerProcessor()
 			nbrLignes++;
 			if (ligne.contains("Belgique")) {
 				nbrBelgique++;
@@ -26,7 +29,6 @@ public class AnalyseurDeTexte {
 					nbrPalindromes++;
 				}
 			}
-
 		}
 		lecteurAvecBuffer.close();
 		System.out.println("Il y avait " + nbrLignes + " lignes.");

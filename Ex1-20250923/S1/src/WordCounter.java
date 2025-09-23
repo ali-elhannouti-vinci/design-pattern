@@ -1,6 +1,6 @@
 public class WordCounter extends LineProcessor {
     private int nbrWords = 0;
-    public WordCounter(int currentLine) {
+    public WordCounter(String currentLine) {
         super(currentLine);
     }
 

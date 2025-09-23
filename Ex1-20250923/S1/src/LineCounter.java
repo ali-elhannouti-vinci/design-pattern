@@ -1,6 +1,6 @@
 public class LineCounter extends LineProcessor {
     private int lineCounter = 0;
-    public LineCounter(int currentLine) {
+    public LineCounter(String currentLine) {
         super(currentLine);
     }
 

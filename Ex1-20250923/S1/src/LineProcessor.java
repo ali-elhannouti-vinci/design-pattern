@@ -1,17 +1,17 @@
 public abstract class LineProcessor {
-    private int currentLine;
+    private String currentLine;
 
-    public LineProcessor(int currentLine) {
+    public LineProcessor(String currentLine) {
         this.currentLine = currentLine;
     }
 
     public abstract boolean processLine();
 
-    public int getCurrentLine() {
+    public String getCurrentLine() {
         return currentLine;
     }
 
-    public void setCurrentLine(int currentLine) {
+    public void setCurrentLine(String currentLine) {
         this.currentLine = currentLine;
     }
 

@@ -1,6 +1,6 @@
 public class PalindromesCounter extends LineProcessor {
     private int nbrPalindromes = 0;
-    public PalindromesCounter(int currentLine) {
+    public PalindromesCounter(String currentLine) {
         super(currentLine);
     }
 
