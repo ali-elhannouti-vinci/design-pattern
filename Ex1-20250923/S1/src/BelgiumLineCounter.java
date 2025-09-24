@@ -1,13 +1,14 @@
-public class BelgiumLineCounter extends LineProcessor {
-    private int nbrBelgium;
+public class BelgiumLineCounter implements LineProcessor {
+    private int nbrBelgium = 0;
 
-    public BelgiumLineCounter(String currentLine) {
-        super(currentLine);
+    public BelgiumLineCounter() {
     }
 
     @Override
-    public boolean processLine() {
-        return false;
+    public void processLine(String line) {
+        if (line.contains("Belgique")) {
+            nbrBelgium++;
+        }
     }
 
     public int getNbrBelgium() {

@@ -1,12 +1,14 @@
-public class WordCounter extends LineProcessor {
+public class WordCounter implements LineProcessor {
     private int nbrWords = 0;
-    public WordCounter(String currentLine) {
-        super(currentLine);
+
+    public WordCounter() {
     }
 
     @Override
-    public boolean processLine() {
-        return false;
+    public void processLine(String line) {
+        for (String mot : line.trim().split(" ")) {
+            nbrWords++;
+        }
     }
 
     public int getNbrWords() {

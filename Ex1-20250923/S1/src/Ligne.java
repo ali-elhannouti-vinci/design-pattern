@@ -1,9 +1,11 @@
 import java.util.ArrayList;
 
-public class Texte {
+public class Ligne {
     public ArrayList<LineProcessor> processors = new ArrayList<>();
+    private String line;
 
-    public Texte() {
+    public Ligne(String line) {
+        this.line = line;
     }
 
     public boolean registerProcessor(LineProcessor processor){
@@ -14,14 +16,9 @@ public class Texte {
         return processors.remove(processor);
     }
 
-    public boolean notifyProcessors(){
+    public void notifyProcessors(){
         for (LineProcessor processor : processors){
-            boolean processResult = processor.processLine();
-            if (!processResult){
-                return false;
-            }
+            processor.processLine(line);
         }
-        return true;
     }
-
 }

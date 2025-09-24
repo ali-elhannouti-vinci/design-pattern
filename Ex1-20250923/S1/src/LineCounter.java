@@ -1,15 +1,15 @@
-public class LineCounter extends LineProcessor {
+public class LineCounter implements LineProcessor {
     private int lineCounter = 0;
-    public LineCounter(String currentLine) {
-        super(currentLine);
-    }
 
-    @Override
-    public boolean processLine() {
-        return false;
+    public LineCounter() {
     }
 
     public int getLineCounter() {
         return lineCounter;
+    }
+
+    @Override
+    public void processLine(String line) {
+        lineCounter++;
     }
 }
