@@ -1,0 +1,2 @@
+Quels patterns?
+Composite car arbre. Composite : Group. Leaf : Valeur. Operation : demande(Traitement traitement) : 

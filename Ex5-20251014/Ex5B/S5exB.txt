@@ -1,0 +1,3 @@
+Quels patterns ?
+Template method car une abstract class, une concrete class, une Template method(action()) et une primitive operation (work() et name()). Si une méthode concrète appelle une méthode abstraite , c'est Template method.
+Facade car DwarvenGoldmine cache les autres classes et est la seule classe qui est appelée par Main (main()).
